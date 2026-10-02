@@ -1,0 +1,17 @@
+id: bad_example
+namespace: company.team
+tasks:
+  - id: hello
+    type: io.kestra.plugin.core.log.Log
+    message: hi
+  - id: call
+    type: io.kestra.plugin.core.http.Request
+    uri: https://example.com
+    headers:
+      api_key: sk_live_abcdef1234567890
+extend:
+  title: Bad example
+  metaDescription: x
+  tags:
+    - Data
+    - Monitoring
