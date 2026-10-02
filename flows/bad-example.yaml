@@ -1,4 +1,4 @@
-id: bad_example
+id: bad-example
 namespace: company.team
 tasks:
   - id: hello
